@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <enlace rel="preconectar" href="https://fonts.googleapis.com">
+    <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Las Pilchas</title>
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <div class="logo">
+                <img src="../imagenes/logolaspilchas.png" alt="logo">
+            </div>
+            <div class="titulo">
+                <h1 class="animate__animated animate__bounce">Las Pilchas</h1>
+            </div>
+        </div>
+        <nav class="navegacion">
+            <ul class="listanav">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./hombre.html">Hombre</a></li>
+                <li><a href="./mujer.html">Mujer</a></li>
+                <li><a href="./niños.html">Niños</a></li>
+                <li><a href="./ayuda.html">Ayuda</a></li>
+            </ul>
+            <form class="busqueda">
+                <input type="text" name="Busqueda" placeholder="Buscar">
+                <button type="submit">Buscar</button>
+            </form>
+        </nav>
+    </header>
+    <main class="cuerpo">
+        <div class="titulosecciones">
+            <h2>Ayuda</h2>
+        </div>
+        <div class="botones">
+            <div class="preguntas1">
+                <button type="button">¿Cómo realizo mi pedido?</button>
+                <button type="button">¿Hay monto mínimo de compra?</button>
+            </div>
+            <div class="preguntas2">
+                <button type="button">¿Cuándo llega mi pedido?</button>
+                <button type="button">¿A quién acudo si no 
+                    recibi mi pedido?</button>
+            </div>
+        </div>
+        <div class="subform">
+            <h2>Escribinos tu consulta o problema completando el siguiente formulario:</h2>
+        </div>
+        <form class="formulario">
+            <fieldset>
+                <legend>Formulario</legend>
+                <div class="datos">
+                    <div class="formcont1">
+                        <div>
+                            <div class="info">
+                                <label for="nombre_apellido">Nombre: </label>
+                                <input type="text" name="nombre_apellido" placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="info">
+                                <label for="nombre_apellido">Apellido: </label>
+                                <input type="text" name="nombre_apellido" placeholder="Ingrese su apellido">
+                            </div>
+                            <div class="info">
+                                <label for="dni">Documento: </label>
+                                <input type="text" name="dni" placeholder="Ingrese su documento">
+                            </div>
+                            <div class="info">
+                                <label for="provincia">Provincia:</label>
+                                <input type="text" name="provincia" placeholder="Ingrese su provincia">
+                            </div>
+                            <div class="info">
+                                <label for="ciudad">Ciudad:</label>
+                                <input type="text" name="ciudad" placeholder="Ingrese su ciudad">
+                            </div>
+                            <div class="info">
+                                <label for="direccion">Dirección:</label>
+                                <input type="text" name="direccion" placeholder="Ingrese su dirección">
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="formcont2">
+                        <div>
+                            <div class="info">
+                                <label for="email">Email: </label>
+                                <input type="text" name="email" placeholder="Ingrese su email">
+                            </div>
+                            <div class="info">
+                                <label for="telefono">Teléfono: </label>
+                                <input type="text" name="teléfono" placeholder="Ingrese su teléfono">
+                            </div>
+                            <div class="info">
+                                <label for="comunicacion">Me gustaria ser contactado por:</label>
+                                <select>
+                                    <option value="email o telefono">Email o Teléfono</option>
+                                    <option value="solo email">Solo Email</option>
+                                    <option value="solo telefono">Solo Teléfono</option>
+                                </select>
+                            </div>
+                            <div class="info">
+                                <label for="comhorario">Quiero ser contactado</label>
+                                <select>
+                                    <option value="en cualquier momento">En cualquier momento</option>
+                                    <option value="por la mañana">Por la mañana</option>
+                                    <option value="por la tarde">Por la tarde</option>
+                                    <option value="dia de semana">Día de semana</option>
+                                    <option value="el fin de semana">El fin de semana</option>
+                                </select>
+                            </div>
+                            <div class="genero">
+                                <p>Hombre</p>
+                                <input type="radio" name="sexo" value="hombre">
+                                <p>Mujer</p>
+                                <input type="radio" name="sexo" value="mujer">
+                                <p>Indefinido</p>
+                                <input type="radio" name="sexo" value="indefinido">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comentario">
+                        <p><textarea name="comentarios" cols="50" rows="10" maxlength="300" placeholder="Comentanos aquí tu consulta o problema"></textarea>
+                    </div>
+                    
+                </div>
+                
+                <div class="terminos">
+                    <p> Acepta términos y condiciones</p>
+                    <div class="terminosinput">
+                    <input  type="checkbox" name="acepta" value="1">
+                    </div>
+                </div>
+                <input type="submit" value="Enviar formulario">
+                <input type="reset" value="Borrar formulario">
+                
+            </fieldset>
+        </form>
+    </main>
+    <footer class="piedepagina">
+        <div class="redes">
+            <div class="wyf">
+                <a href="https://web.whatsapp.com/"><img src="../imagenes/whatsapp.png" alt="wpp"></a>
+                <a href="https://www.facebook.com/?stype=lo&jlou=AfdYeCl7rbKbwUW6jbFeU9SPLe5IzOGfSmkd1qiiM4v_A_kIv4XfP_jsukpJm5NCSWLXbjeMsUY27-Hj1wRxw0HnFqVNe6pIdkr_RUi36LgbMA&smuh=49380&lh=Ac8fhJIprNC758E6VF4"><img src="../imagenes/facebook.png" alt="facebook"></a>
+            </div>
+            <div class="gyig">
+                <a href="https://www.google.com/intl/es-419/gmail/about/"><img src="../imagenes/gmail.png" alt="gmail"></a>
+                <a href="https://www.instagram.com/?hl=es-la"><img src="../imagenes/instagram.png" alt="ig"></a>
+            </div>
+        </div>
+        <ul class="listanav2"> 
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./hombre.html">Hombre</a></li>
+            <li><a href="./mujer.html">Mujer</a></li>
+            <li><a href="./niños.html">Niños</a></li>
+            <li><a href="./ayuda.html">Ayuda</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

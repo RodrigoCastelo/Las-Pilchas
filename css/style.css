@@ -1,0 +1,369 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Bebas Neue', cursive;
+}
+.header1{
+    display: grid;
+    grid-template-areas:
+    "logo titulo";
+    grid-template-columns: 250px 1fr;
+    background-image: url("../imagenes/imgnav.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 35%;
+}
+.logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    
+}
+.logo img{
+    transition: transform 0.7s ease-in;
+}
+.logo img:hover{
+    transform: scale(1.2);  
+}
+.titulo{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    -webkit-text-stroke: 5px black;
+    color: #ffe0ff;
+}
+.navegacion{ 
+    display: flex;
+    border-top: 3px solid black;
+    background-color: #000;
+    padding: 10px;
+}
+.listanav{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.listanav li{
+    list-style: none;
+}
+.listanav li a{
+    text-decoration: none;
+    color:#ffe0ff;
+}
+.listanav a:hover{
+    font-size: 15px;
+    color: rgb(15, 228, 228);
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10%;
+}
+.busqueda{ 
+    position: absolute;
+    right: 10px;
+}
+
+/* MAIN */
+.cuerpo{
+    /* background-color: #ffe0ff; */
+background: rgb(2,0,36);
+background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, rgba(0,212,255,1) 100%);
+}
+
+.sub1y3 {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px ;
+    text-decoration: underline;
+}
+.cont1{
+    text-align: center;
+}
+.hombre{
+    display: flex;
+    justify-content: space-around;
+}
+.imghm{
+    width: 250px;
+    height: 300px;
+}
+.mujeryniños{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.mujeryniños img{
+    width: 250px;
+    height: 350px;
+}
+
+
+.cont3{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.mediosdepago{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.mediosdepago div h2{
+    text-decoration: underline;
+}
+.pagos{
+    display: flex;
+}
+
+
+
+/* FOOTER */
+.piedepagina{
+    display: flex;
+    justify-content:space-around;
+    background-color: black;
+    padding: 10px;
+}
+.redes{
+    display: flex;
+}
+.redes a img{
+    width: 50px;
+    height: 50px;   
+}
+.wyf{
+    display: flex;
+    flex-direction: column;
+}
+.wyf a img{
+    padding: 5px;
+}
+.gyig{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+.gyig a img{
+    padding: 5px;
+}
+
+.listanav2{
+    display:block;
+}
+.listanav2 li{
+    list-style: none;
+}
+.listanav2 li a{
+    text-decoration: none;
+    color:#ffe0ff;
+}
+.listanav2 a:hover{
+    font-size: 15px;
+    color: rgb(15, 228, 228);
+    background-color: #fff;
+    padding: 1px;
+    border-radius: 10%;
+}
+
+/*HOMBRE MUJER Y NIÑOS*/
+.titulosecciones{
+    display: flex;
+    text-decoration: underline;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pdest{
+    text-decoration: underline;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.imgdest{
+    display: flex;
+    justify-content: space-around;
+}
+.imgdest img{
+    width: 200px;
+    height: 400px;
+}
+
+.oferta{
+    text-decoration: underline;
+    padding: 20px;
+}
+.imgoferta{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.imgoferta img{
+    display: flex;
+    width: 150px;
+    height: 250px;
+}
+
+/* AYUDA */
+.botones{
+    display: flex;
+    justify-content: space-around;
+}
+.preguntas1{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.preguntas2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+/* Form */
+.formulario{
+    padding: 20px;
+}
+
+.datos{
+    display: grid;
+    grid-template-areas: 
+    "formcont1 formcont2"
+    "comentario comentario";
+    column-gap: 10px;
+}
+div.formcont1{
+    grid-area: formcont1;
+    display: flex;
+    justify-content: center;
+    
+}
+div.formcont2{
+    grid-area: formcont2;
+    display: flex;
+    justify-content: center;
+}   
+div.comentario{
+    grid-area: comentario;
+    display: flex;
+    justify-content: center;
+}
+.comentario p textarea{
+    resize: none;
+}
+.comentario p textarea::placeholder{
+    font-size: medium;
+}
+.terminos{
+    display:flex;    
+}
+.terminosinput{
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA*/
+@media screen and (max-width:600px){
+    /* HEADER */
+    .header1{
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "titulo";
+        grid-template-rows: 125px 100px;
+        grid-template-columns:1fr;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        grid-area: logo;
+    }
+    .logo img{
+        display: flex;
+        justify-content: center;
+    }
+    .titulo{
+        grid-area: titulo;
+    }
+
+    .busqueda input{
+        display: none;
+    }
+    .listanav{
+        width: 80%;
+    }
+    .listanav a{
+        font-size: 15px;
+    }
+
+    .hombre img{
+        width: 150px;
+        height: 250px;
+    }
+    .mujeryniños img{
+        width: 150px;
+        height: 250px;
+    }
+
+    /* MAIN INDEX*/
+    .sub1y3 h2{
+        font-size: 20px;
+    }
+    .cont3{
+        display: flex;
+        justify-content: center;
+    }
+    .mediosdepago div h2{
+        font-size: 20px;
+    }
+    .mediosdepago div p{
+        font-size: 15px;
+    }
+
+    /* HOMBRE MUJER Y NIÑOS */
+    .imgdest img{
+        width: 100px;
+        height: 200px;
+    }
+    .imgoferta img{
+        width: 100px;
+        height: 150px;
+    }
+
+    /* AYUDA */
+    .subform h2{
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .datos{
+        display: grid;
+        grid-template-areas:
+        "formcont1"
+        "formcont2"
+        "comentario";
+    }
+    .formcont1{
+        grid-area: formcont1;
+    }
+    .formcont2{
+        grid-area: formcont2;
+        display: flex;
+        justify-content: center;
+    }
+    .comentario{
+        grid-area: comentario;
+    }
+    .comentario p textarea{
+        width: 250px;
+        height: 200px;
+    }
+    
+
+
+}
