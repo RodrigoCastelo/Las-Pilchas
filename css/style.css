@@ -17,7 +17,6 @@
     grid-area: logo;
     display: flex;
     justify-content: center;
-    
 }
 .logo img{
     transition: transform 0.7s ease-in;
