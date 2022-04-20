@@ -29,8 +29,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    -webkit-text-stroke: 5px black;
+}
+.titulo h1{
+    font-size: 50px;
+    -webkit-text-stroke: 2px black ;
     color: #ffe0ff;
 }
 .navegacion{ 
@@ -54,7 +56,7 @@
 .listanav a:hover{
     font-size: 15px;
     color: rgb(15, 228, 228);
-    background-color: #fff;
+    background-color: black;
     padding: 5px;
     border-radius: 10%;
 }
@@ -269,6 +271,11 @@ div.comentario{
 
 /* MEDIA*/
 @media screen and (max-width:600px){
+    *{
+        margin:0;
+        padding:0;
+        font-family: 'Bebas Neue', cursive;
+    }
     /* HEADER */
     .header1{
         display: grid;
