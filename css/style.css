@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Inter', sans-serif;
 }
 .header1{
     display: grid;
@@ -18,10 +18,10 @@
     display: flex;
     justify-content: center;
 }
-.logo img{
-    transition: transform 0.7s ease-in;
+.logo a img{
+    transition: transform 0.2s ease-in;
 }
-.logo img:hover{
+.logo a img:hover{
     transform: scale(1.2);  
 }
 .titulo{
@@ -31,43 +31,45 @@
     align-items: center;
 }
 .titulo h1{
-    font-size: 50px;
-    -webkit-text-stroke: 2px black ;
+    font-size: 65px;
     color: #ffe0ff;
+    box-shadow: 30px 30px 30px rgb(32, 5, 28);
+    background: rgb(2,0,36);
+    background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, rgba(0,212,255,1) 100%);
+    border-radius: 10px;
 }
-.navegacion{ 
-    display: flex;
-    border-top: 3px solid black;
-    background-color: #000;
-    padding: 10px;
+nav div a.navbar-brand{
+    font-size: 20px;
+    padding: 5px;
+}
+nav div a{
+    color: #ffe0ff !important;
+}
+nav div a:hover{
+    color: #ffe0ff;
+    font-size: 25px;
+    background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, rgba(0,212,255,1) 100%);
+    border-radius: 5px;
+    padding: 0%;
 }
 .listanav{
     width: 50%;
     display: flex;
     justify-content: space-between;
 }
-.listanav li{
-    list-style: none;
+nav div div form button.busc{
+    color: #ffe0ff;
+    border: solid 2px;
+    border-color:#ffe0ff;
+    border-radius: 10px;
 }
-.listanav li a{
-    text-decoration: none;
-    color:#ffe0ff;
-}
-.listanav a:hover{
-    font-size: 15px;
-    color: rgb(15, 228, 228);
-    background-color: black;
-    padding: 5px;
-    border-radius: 10%;
-}
-.busqueda{ 
-    position: absolute;
-    right: 10px;
+nav div div form button:hover{
+    background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, rgba(0,212,255,1) 100%);
+    color: #ffe0ff !important;
 }
 
 /* MAIN */
 .cuerpo{
-    /* background-color: #ffe0ff; */
 background: rgb(2,0,36);
 background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, rgba(0,212,255,1) 100%);
 }
@@ -77,22 +79,53 @@ background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, r
     justify-content: center;
     padding: 20px 0px ;
     text-decoration: underline;
+    color: #ffe0ff;
+    margin: 0%;
+}
+.sub1y3 h2{
+    font-size: 25px;
 }
 .cont1{
     text-align: center;
+    color: #ffe0ff;
 }
+div.cont1 p{
+    font-size: 25px;
+    margin: 0%;
+}
+
 .hombre{
     display: flex;
     justify-content: space-around;
+    animation-name: entrada-img;
+    animation-duration: 3s;
+}
+@keyframes entrada-img{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
 }
 .imghm{
     width: 250px;
     height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}
+.imghm:hover{
+    transform: scale(1.1);
 }
 .mujeryniños{
     display: flex;
     justify-content: space-around;
     padding-top: 50px;
+    animation-name: entrada-img;
+    animation-duration: 3s;
 }
 .mujeryniños img{
     width: 250px;
@@ -105,19 +138,29 @@ background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, r
     justify-content: center;
     padding-bottom: 20px;
 }
-
+.cont3 iframe{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+.cont3 iframe:hover{
+    transform: scale(1.05);
+}
 .mediosdepago{
     padding-left: 20px;
     padding-bottom: 20px;
+    color: #ffe0ff;
 }
 .mediosdepago div h2{
     text-decoration: underline;
+    font-size: 25px;
 }
 .pagos{
-    display: flex;
+    display: flex;    
 }
-
-
+form.pagos select{
+    border-radius: 5px;
+    color: black;
+}
 
 /* FOOTER */
 .piedepagina{
@@ -132,6 +175,11 @@ background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, r
 .redes a img{
     width: 50px;
     height: 50px;   
+}
+.redes div a:hover{
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #ffe0ff;
+    transform: scale(1.2);
 }
 .wyf{
     display: flex;
@@ -158,13 +206,15 @@ background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, r
 .listanav2 li a{
     text-decoration: none;
     color:#ffe0ff;
+    transition: 0.2s;
 }
 .listanav2 a:hover{
-    font-size: 15px;
-    color: rgb(15, 228, 228);
-    background-color: #fff;
+    font-size: 20px;
+    background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, rgba(0,212,255,1) 100%);
+    color: #ffe0ff;
     padding: 1px;
-    border-radius: 10%;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
 }
 
 /*HOMBRE MUJER Y NIÑOS*/
@@ -173,75 +223,130 @@ background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, r
     text-decoration: underline;
     justify-content: center;
     padding: 20px;
+    color:#ffe0ff;
 }
 
 .pdest{
     text-decoration: underline;
     padding-left: 20px;
     padding-bottom: 20px;
+    color: #ffe0ff;
 }
 .imgdest{
     display: flex;
     justify-content: space-around;
 }
 .imgdest img{
+    box-shadow: 5px 5px 5px 5px black;
     width: 200px;
     height: 400px;
+    border-radius: 10px;
+}
+.imgdest img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0,3s ease-in-out;
 }
 
 .oferta{
     text-decoration: underline;
     padding: 20px;
+    color: #ffe0ff;
 }
 .imgoferta{
     display: flex;
     justify-content: space-around;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 .imgoferta img{
-    display: flex;
     width: 150px;
     height: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+.imgoferta img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0,3s ease-in-out;
 }
 
 /* AYUDA */
 .botones{
-    display: flex;
+    display: grid;
+    grid-template-areas: "preguntas1 preguntas2";
     justify-content: space-around;
 }
 .preguntas1{
+    grid-area:preguntas1;
     display: flex;
     flex-direction: column;
-    padding: 20px;
 }
 .preguntas2{
+    grid-area: preguntas2;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    margin-left:5px;
+}
+div.botones div button{
+    font-size: 25px;
+    color: rgba(rgb(105, 10, 126), rgb(33, 12, 46), rgb(0, 0, 0), alpha);
+    background: #ffe0ff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 0 10px 0;
 }
 /* Form */
-.formulario{
-    padding: 20px;
+.subform{
+    margin-top: 5px;
 }
-
+.subform h2{
+    color: #ffe0ff;
+}
+.formulario{
+    padding:20px;
+    color: #ffe0ff;
+}
+.formulario legend{
+    font-size: calc(2rem + .3vw);
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.formulario fieldset{
+    border: solid #ffe0ff;
+    border-style: solid 2px black;
+    border-radius: 10px;
+}
 .datos{
     display: grid;
     grid-template-areas: 
     "formcont1 formcont2"
     "comentario comentario";
-    column-gap: 10px;
+    
 }
 div.formcont1{
     grid-area: formcont1;
     display: flex;
     justify-content: center;
-    
+    align-items: center;
 }
 div.formcont2{
     grid-area: formcont2;
     display: flex;
     justify-content: center;
-}   
+    align-items: center;
+}
+.info{
+    display: grid;
+    grid-template-areas:"label input" ;
+    padding: 0 0 40px 0;
+}
+.info label{
+    grid-area:label ;
+}
+.info input{
+    grid-area: input;
+}
 div.comentario{
     grid-area: comentario;
     display: flex;
@@ -263,19 +368,44 @@ div.comentario{
 
 
 
-
-
-
-
-
-
 /* MEDIA*/
-@media screen and (max-width:600px){
-    *{
-        margin:0;
-        padding:0;
-        font-family: 'Bebas Neue', cursive;
+@media screen and (max-width: 768px){
+    .datos{
+        display: grid;
+        grid-template-areas:
+        "formcont1"
+        "formcont2"
+        "comentario";
     }
+    .formcont1{
+        grid-area: formcont1;
+        display: flex;
+        justify-content: center;
+    }
+    .formcont2{
+        grid-area: formcont2;
+        display: flex;
+        justify-content: center;
+    }
+    .comentario{
+        grid-area: comentario;
+    }
+    .comentario p textarea{
+        width: 250px;
+        height: 200px;
+    }
+    .info{
+        display: grid;
+        grid-template-areas: "label input";
+    }
+    .info label{
+        grid-area: label;
+    }
+    .info input{
+        grid-area: input;
+    }
+}
+@media screen and (max-width:600px){
     /* HEADER */
     .header1{
         display: grid;
@@ -285,17 +415,20 @@ div.comentario{
         grid-template-rows: 125px 100px;
         grid-template-columns:1fr;
     }
-    .logo{
+    .logo a{
         display: flex;
         justify-content: center;
         grid-area: logo;
     }
-    .logo img{
+    .logo a img{
         display: flex;
         justify-content: center;
     }
     .titulo{
         grid-area: titulo;
+    }
+    .titulo h1{
+        font-size: 50px;
     }
 
     .busqueda input{
@@ -321,6 +454,9 @@ div.comentario{
     .sub1y3 h2{
         font-size: 20px;
     }
+    div.cont1 p{
+        font-size: 20px;
+    }
     .cont3{
         display: flex;
         justify-content: center;
@@ -329,7 +465,7 @@ div.comentario{
         font-size: 20px;
     }
     .mediosdepago div p{
-        font-size: 15px;
+        font-size: 20px;
     }
 
     /* HOMBRE MUJER Y NIÑOS */
@@ -343,6 +479,9 @@ div.comentario{
     }
 
     /* AYUDA */
+    div.botones div button{
+        font-size: 15px;
+    }
     .subform h2{
         font-size: 20px;
         padding-left: 20px;
@@ -369,7 +508,14 @@ div.comentario{
         width: 250px;
         height: 200px;
     }
-    
-
-
+    .info{
+        display: grid;
+        grid-template-areas: "label input";
+    }
+    .info label{
+        grid-area: label;
+    }
+    .info input{
+        grid-area: input;
+    }
 }
