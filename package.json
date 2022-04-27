@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-las-pilchas",
+  "version": "1.0.0",
+  "description": "primer proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/nuevostyles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoCastelo/Las-Pilchas.git"
+  },
+  "author": "Rodrigo Castelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodrigoCastelo/Las-Pilchas/issues"
+  },
+  "homepage": "https://github.com/RodrigoCastelo/Las-Pilchas#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,78 @@
+.header1{
+    display: grid;
+    grid-template-areas:
+    "logo titulo";
+    grid-template-columns: 250px 1fr;
+    background-image: url("../imagenes/imgnav.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 35%;
+    .logo{
+        grid-area: logo;
+    display: flex;
+    justify-content: center;
+        a{
+            img{
+                transition: transform 0.2s ease-in;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    .titulo{
+        grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        h1{
+            font-size: 65px;
+            color: #ffe0ff;
+            box-shadow: 30px 30px 30px rgb(32, 5, 28);
+            background: rgb(2,0,36);
+            background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, rgba(0,212,255,1) 100%);
+            border-radius: 10px;
+        }
+    }
+    nav{
+        div{
+            a{
+                color: #ffe0ff !important;
+                &:hover{
+                    color: #ffe0ff;
+                    font-size: 25px;
+                    background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, rgba(0,212,255,1) 100%);
+                    border-radius: 5px;
+                    padding: 0%;
+                }
+            }
+        }
+        div{
+            ul{
+                .listanav{
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+                    li{
+                        a{
+                            color: #ffe0ff;
+                        }
+                    }
+                }
+            }
+            form{
+                button{
+                    &:hover{
+                        background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, rgba(0,212,255,1) 100%);
+                        color: #ffe0ff !important;}
+                    .busc{
+                        color: #ffe0ff;
+                        border: solid 2px;
+                        border-color:#ffe0ff;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

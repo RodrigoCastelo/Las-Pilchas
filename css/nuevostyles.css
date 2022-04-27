@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif; 
+}
+.header1 {
+    display: grid;
+    grid-template-areas: "logo titulo";
+    grid-template-columns: 250px 1fr;
+    background-image: url("../imagenes/imgnav.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 35%; }
+    .header1 .logo {
+        grid-area: logo;
+        display: flex;
+        justify-content: center; }
+        .header1 .logo a img {
+            transition: transform 0.2s ease-in; }
+        .header1 .logo a img:hover {
+            transform: scale(1.2); }
+    .header1 .titulo {
+        grid-area: titulo;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .header1 .titulo h1 {
+            font-size: 65px;
+            color: #ffe0ff;
+            box-shadow: 30px 30px 30px #20051c;
+            background: #020024;
+            background: linear-gradient(278deg, #020024 0%, #d522d1 57%, #00d4ff 100%);
+            border-radius: 10px; }
+    .header1 nav div a {
+    color: #ffe0ff !important; }
+        .header1 nav div a:hover {
+            color: #ffe0ff;
+            font-size: 25px;
+            background: linear-gradient(278deg, #020024 0%, #d522d1 57%, #00d4ff 100%);
+            border-radius: 5px;
+            padding: 0%; }
+    .header1 nav div ul .listanav {
+        width: 50%;
+        display: flex;
+        justify-content: space-between; }
+    .header1 nav div ul .listanav li a {
+        color: #ffe0ff; }
+    .header1 nav div form button:hover {
+        background: linear-gradient(278deg, #020024 0%, #d522d1 57%, #00d4ff 100%);
+        color: #ffe0ff !important; }
+    .header1 nav div form button .busc {
+        color: #ffe0ff;
+        border: solid 2px;
+        border-color: #ffe0ff;
+        border-radius: 10px; }
