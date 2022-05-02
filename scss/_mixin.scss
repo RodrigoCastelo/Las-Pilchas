@@ -1,0 +1,7 @@
+@mixin boxSizes ($width, $height){
+    height: $height;
+    width: $width;
+}
+img.imghm{
+    @include boxSizes(250px, 300px)
+}

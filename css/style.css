@@ -3,7 +3,7 @@
     padding:0;
     font-family: 'Inter', sans-serif;
 }
-/* .header1{
+.header1{
     display: grid;
     grid-template-areas:
     "logo titulo";
@@ -66,7 +66,7 @@ nav div div form button.busc{
 nav div div form button:hover{
     background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, rgba(0,212,255,1) 100%);
     color: #ffe0ff !important;
-} */
+}
 
 /* MAIN */
 .cuerpo{
@@ -307,7 +307,7 @@ div.botones div button{
     color: #ffe0ff;
 }
 .formulario legend{
-    font-size: calc(2rem + .3vw);
+    font-size: 40px;
     color: black;
     display: flex;
     justify-content: center;
@@ -322,30 +322,31 @@ div.botones div button{
     grid-template-areas: 
     "formcont1 formcont2"
     "comentario comentario";
-    
 }
 div.formcont1{
     grid-area: formcont1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-bottom: 10px;
 }
 div.formcont2{
     grid-area: formcont2;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10px;
 }
 .info{
+    padding-top: 5px;
+    padding-bottom: 5px;
     display: grid;
-    grid-template-areas:"label input" ;
-    padding: 0 0 40px 0;
-}
-.info label{
-    grid-area:label ;
+    place-items: center;
 }
 .info input{
-    grid-area: input;
+    border-radius: 10px;
+}
+.info select{
+    border-radius: 10px;
 }
 div.comentario{
     grid-area: comentario;
@@ -354,57 +355,28 @@ div.comentario{
 }
 .comentario p textarea{
     resize: none;
+    border-radius: 10px;
 }
 .comentario p textarea::placeholder{
     font-size: medium;
 }
 .terminos{
-    display:flex;    
+    display:grid;
+    justify-content: center;
+    margin: 10px;   
 }
-.terminosinput{
-    margin-top: 2px;
-    margin-left: 5px;
-}
-
-
-
-/* MEDIA*/
-@media screen and (max-width: 768px){
-    .datos{
-        display: grid;
-        grid-template-areas:
-        "formcont1"
-        "formcont2"
-        "comentario";
-    }
-    .formcont1{
-        grid-area: formcont1;
+.enviar{
+    display: flex; 
         display: flex;
-        justify-content: center;
-    }
-    .formcont2{
-        grid-area: formcont2;
-        display: flex;
-        justify-content: center;
-    }
-    .comentario{
-        grid-area: comentario;
-    }
-    .comentario p textarea{
-        width: 250px;
-        height: 200px;
-    }
-    .info{
-        display: grid;
-        grid-template-areas: "label input";
-    }
-    .info label{
-        grid-area: label;
-    }
-    .info input{
-        grid-area: input;
-    }
+    display: flex; 
+    justify-content:space-around;
 }
+.enviar input{
+    border-radius:10px;
+    width: 100px;
+}
+
+
 @media screen and (max-width:600px){
     /* HEADER */
     .header1{
@@ -431,9 +403,9 @@ div.comentario{
         font-size: 50px;
     }
 
-    .busqueda input{
+    /* .d-flex input{
         display: none;
-    }
+    } */
     .listanav{
         width: 80%;
     }
@@ -495,6 +467,7 @@ div.comentario{
     }
     .formcont1{
         grid-area: formcont1;
+        display: flex;
     }
     .formcont2{
         grid-area: formcont2;
@@ -503,19 +476,14 @@ div.comentario{
     }
     .comentario{
         grid-area: comentario;
+        display: flex;
+        justify-content: center;
+    }
+    .comentario p{
+        margin: 0;
     }
     .comentario p textarea{
-        width: 250px;
+        width: 260px;
         height: 200px;
-    }
-    .info{
-        display: grid;
-        grid-template-areas: "label input";
-    }
-    .info label{
-        grid-area: label;
-    }
-    .info input{
-        grid-area: input;
     }
 }

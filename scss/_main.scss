@@ -1,0 +1,86 @@
+.cuerpo{
+    background: rgb(2,0,36);
+    background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, rgba(0,212,255,1) 100%);
+    div.sub1y3{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px ;
+        text-decoration: underline;
+        color: #ffe0ff;
+        margin: 0%;
+        h2{
+            font-size: 25px;
+        }
+    }
+    div.cont1{
+        text-align: center;
+        color: #ffe0ff;
+            p{
+                font-size: 25px;
+                margin: 0%;
+        }
+    }
+    div.cont2{
+        div.hombre{
+            display: flex;
+            justify-content: space-around;
+            animation-name: entrada-img;
+            animation-duration: 3s;
+        }
+        div.mujeryniños{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 50px;
+            animation-name: entrada-img;
+            animation-duration: 3s;
+        }
+        img.imghm{
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px black;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    div.cont3{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        iframe{
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px black;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+    div.mediosdepago{
+        padding-left: 20px;
+        padding-bottom: 20px;
+        color: #ffe0ff;
+        div{
+            h2{
+                text-decoration: underline;
+                font-size: 25px;
+            }
+        }
+        form.pagos{
+            display: flex;
+            select{
+                border-radius: 5px;
+                color: black;
+            }
+        }
+    }
+}
+@keyframes entrada-img{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}

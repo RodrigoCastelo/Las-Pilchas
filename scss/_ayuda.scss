@@ -1,0 +1,106 @@
+main{
+    div.botones{
+        display: grid;
+        grid-template-areas: "preguntas1 preguntas2";
+        justify-content: space-around;
+        div{
+            button{
+                font-size: 25px;
+                background: #ffe0ff;
+                border-radius: 10px;
+                padding: 10px;
+                margin: 0 0 10px 0;
+            }
+        }
+        div.preguntas1{
+            grid-area:preguntas1;
+            display: flex;
+            flex-direction: column;
+        }
+        div.preguntas2{
+            grid-area: preguntas2;
+            display: flex;
+            flex-direction: column;
+            margin-left:5px;
+        }
+    }
+    div.subform{
+        margin-top: 5px;
+        h2{
+            color: #ffe0ff;
+        }
+    }
+    form.formulario{
+        padding:20px;
+        color: #ffe0ff;
+        fieldset{
+            border: solid #ffe0ff;
+            border-style: solid 2px black;
+            border-radius: 10px;
+            legend{
+                font-size: 40px;
+                color: black;
+                display: flex;
+                justify-content: center;
+            }
+            div.datos{
+                display: grid;
+                grid-template-areas: 
+                "formcont1 formcont2"
+                "comentario comentario";
+                div.formcont1{
+                    grid-area: formcont1;
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 10px;
+                }
+                div.formcont2{
+                    grid-area: formcont2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-bottom: 10px;
+                }
+                div.info{
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    display: grid;
+                    place-items: center;
+                    input{
+                        border-radius: 10px;
+                    }
+                    select{
+                        border-radius: 10px;
+                    }
+                }
+                div.comentario{
+                    grid-area: comentario;
+                    display: flex;
+                    justify-content: center;
+                    p{
+                        textarea{
+                            resize: none;
+                            border-radius: 10px;
+                            &::placeholder{
+                                font-size: medium;
+                            }
+                        }
+                    }
+                }
+            }
+            div.terminos{
+                display:grid;
+                justify-content: center;
+                margin: 10px;
+                div.enviar{
+                    display: flex; 
+                    justify-content:space-around;
+                    input{
+                        border-radius:10px;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

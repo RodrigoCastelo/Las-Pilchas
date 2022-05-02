@@ -1,0 +1,49 @@
+div.titulosecciones{
+    display: flex;
+    text-decoration: underline;
+    justify-content: center;
+    padding: 20px;
+    color:#ffe0ff;
+}
+div.pdest{
+    text-decoration: underline;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    color: #ffe0ff;
+}
+div.imgdest{
+    display: flex;
+    justify-content: space-around;
+    img{
+        box-shadow: 5px 5px 5px 5px black;
+        width: 200px;
+        height: 400px;
+        border-radius: 10px;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.05);
+            transition: 0,3s ease-in-out;
+        }
+    }
+}
+div.oferta{
+    text-decoration: underline;
+    padding: 20px;
+    color: #ffe0ff;
+}
+div.imgoferta{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    img{
+        width: 150px;
+        height: 250px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px black;
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: 0,3s ease-in-out;
+        }
+    }
+}

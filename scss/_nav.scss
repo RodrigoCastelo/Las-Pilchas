@@ -1,0 +1,37 @@
+nav{
+    div{
+        a.navbar-brand{
+            font-size: 20px;
+            padding: 5px;
+        }
+        a{
+            color: #ffe0ff !important;
+            &:hover{
+                color: #ffe0ff;
+                font-size: 25px;
+                background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, rgba(0,212,255,1) 100%);
+                border-radius: 5px;
+                padding: 0%;
+            }
+        }
+        div{
+            ul.listanav{
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+                }
+            form{
+                button.busc{
+                    color: #ffe0ff;
+                    border: solid 2px;
+                    border-color:#ffe0ff;
+                    border-radius: 10px;
+                }
+                button:hover{
+                    background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, rgba(0,212,255,1) 100%);
+                    color: #ffe0ff !important;
+                }
+            }
+        }
+    }
+}

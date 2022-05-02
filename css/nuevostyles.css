@@ -1,55 +1,370 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif; 
-}
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif; }
+
 .header1 {
-    display: grid;
-    grid-template-areas: "logo titulo";
-    grid-template-columns: 250px 1fr;
-    background-image: url("../imagenes/imgnav.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 35%; }
-    .header1 .logo {
-        grid-area: logo;
-        display: flex;
-        justify-content: center; }
-        .header1 .logo a img {
-            transition: transform 0.2s ease-in; }
-        .header1 .logo a img:hover {
-            transform: scale(1.2); }
-    .header1 .titulo {
-        grid-area: titulo;
+  display: grid;
+  grid-template-areas: "logo titulo";
+  grid-template-columns: 250px 1fr;
+  background-image: url("../imagenes/imgnav.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 35%; }
+  .header1 .logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center; }
+    .header1 .logo a img {
+      transition: transform 0.2s ease-in; }
+      .header1 .logo a img:hover {
+        transform: scale(1.2); }
+  .header1 .titulo {
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+div.titulo h1 {
+  font-size: 65px;
+  color: #ffe0ff;
+  box-shadow: 30px 30px 30px #20051c;
+  background: #020024;
+  background: linear-gradient(278deg, #020024 0%, #d522d1 57%, #00d4ff 100%);
+  border-radius: 10px; }
+
+nav div a.navbar-brand {
+  font-size: 20px;
+  padding: 5px; }
+
+nav div a {
+  color: #ffe0ff !important; }
+  nav div a:hover {
+    color: #ffe0ff;
+    font-size: 25px;
+    background: linear-gradient(278deg, #020024 0%, #d522d1 57%, #00d4ff 100%);
+    border-radius: 5px;
+    padding: 0%; }
+
+nav div div ul.listanav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between; }
+
+nav div div form button.busc {
+  color: #ffe0ff;
+  border: solid 2px;
+  border-color: #ffe0ff;
+  border-radius: 10px; }
+
+nav div div form button:hover {
+  background: linear-gradient(278deg, #020024 0%, #d522d1 57%, #00d4ff 100%);
+  color: #ffe0ff !important; }
+
+.cuerpo {
+  background: #020024;
+  background: linear-gradient(278deg, #020024 0%, #d522d1 57%, #00d4ff 100%); }
+  .cuerpo div.sub1y3 {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    text-decoration: underline;
+    color: #ffe0ff;
+    margin: 0%; }
+    .cuerpo div.sub1y3 h2 {
+      font-size: 25px; }
+  .cuerpo div.cont1 {
+    text-align: center;
+    color: #ffe0ff; }
+    .cuerpo div.cont1 p {
+      font-size: 25px;
+      margin: 0%; }
+  .cuerpo div.cont2 div.hombre {
+    display: flex;
+    justify-content: space-around;
+    animation-name: entrada-img;
+    animation-duration: 3s; }
+  .cuerpo div.cont2 div.mujeryniños {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    animation-name: entrada-img;
+    animation-duration: 3s; }
+  .cuerpo div.cont2 img.imghm {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer; }
+    .cuerpo div.cont2 img.imghm:hover {
+      transform: scale(1.1); }
+  .cuerpo div.cont3 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px; }
+    .cuerpo div.cont3 iframe {
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px 5px black; }
+      .cuerpo div.cont3 iframe:hover {
+        transform: scale(1.05); }
+  .cuerpo div.mediosdepago {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    color: #ffe0ff; }
+    .cuerpo div.mediosdepago div h2 {
+      text-decoration: underline;
+      font-size: 25px; }
+    .cuerpo div.mediosdepago form.pagos {
+      display: flex; }
+      .cuerpo div.mediosdepago form.pagos select {
+        border-radius: 5px;
+        color: black; }
+
+@keyframes entrada-img {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+img.imghm {
+  height: 300px;
+  width: 250px; }
+
+div.wyf, div.gyig {
+  display: flex;
+  flex-direction: column; }
+
+div.gyig {
+  padding-left: 50px; }
+
+footer.piedepagina {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding: 10px; }
+  footer.piedepagina div.redes {
+    display: flex; }
+    footer.piedepagina div.redes a:hover {
+      border-radius: 5px;
+      box-shadow: 1px 1px 1px 1px #ffe0ff;
+      transform: scale(1.2); }
+    footer.piedepagina div.redes a img {
+      width: 50px;
+      height: 50px; }
+    footer.piedepagina div.redes div.wyf a img, footer.piedepagina div.redes div.gyig a img {
+      padding: 5px; }
+    footer.piedepagina div.redes div.gyig a img {
+      padding: 5px; }
+  footer.piedepagina ul.listanav2 {
+    display: block; }
+    footer.piedepagina ul.listanav2 li {
+      list-style: none; }
+      footer.piedepagina ul.listanav2 li a {
+        text-decoration: none;
+        color: #ffe0ff;
+        transition: 0.2s; }
+        footer.piedepagina ul.listanav2 li a:hover {
+          font-size: 20px;
+          background: linear-gradient(278deg, #020024 0%, #d522d1 57%, #00d4ff 100%);
+          color: #ffe0ff;
+          padding: 1px;
+          border-radius: 10px;
+          transition: 0.2s ease-in-out; }
+
+div.titulosecciones {
+  display: flex;
+  text-decoration: underline;
+  justify-content: center;
+  padding: 20px;
+  color: #ffe0ff; }
+
+div.pdest {
+  text-decoration: underline;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  color: #ffe0ff; }
+
+div.imgdest {
+  display: flex;
+  justify-content: space-around; }
+  div.imgdest img {
+    box-shadow: 5px 5px 5px 5px black;
+    width: 200px;
+    height: 400px;
+    border-radius: 10px; }
+    div.imgdest img:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      transition: 0,3s ease-in-out; }
+
+div.oferta {
+  text-decoration: underline;
+  padding: 20px;
+  color: #ffe0ff; }
+
+div.imgoferta {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px; }
+  div.imgoferta img {
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px black; }
+    div.imgoferta img:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+      transition: 0,3s ease-in-out; }
+
+main div.botones {
+  display: grid;
+  grid-template-areas: "preguntas1 preguntas2";
+  justify-content: space-around; }
+  main div.botones div button {
+    font-size: 25px;
+    background: #ffe0ff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 0 10px 0; }
+  main div.botones div.preguntas1 {
+    grid-area: preguntas1;
+    display: flex;
+    flex-direction: column; }
+  main div.botones div.preguntas2 {
+    grid-area: preguntas2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px; }
+
+main div.subform {
+  margin-top: 5px; }
+  main div.subform h2 {
+    color: #ffe0ff; }
+
+main form.formulario {
+  padding: 20px;
+  color: #ffe0ff; }
+  main form.formulario fieldset {
+    border: solid #ffe0ff;
+    border-style: solid 2px black;
+    border-radius: 10px; }
+    main form.formulario fieldset legend {
+      font-size: 40px;
+      color: black;
+      display: flex;
+      justify-content: center; }
+    main form.formulario fieldset div.datos {
+      display: grid;
+      grid-template-areas: "formcont1 formcont2" "comentario comentario"; }
+      main form.formulario fieldset div.datos div.formcont1 {
+        grid-area: formcont1;
         display: flex;
         justify-content: center;
-        align-items: center; }
-        .header1 .titulo h1 {
-            font-size: 65px;
-            color: #ffe0ff;
-            box-shadow: 30px 30px 30px #20051c;
-            background: #020024;
-            background: linear-gradient(278deg, #020024 0%, #d522d1 57%, #00d4ff 100%);
-            border-radius: 10px; }
-    .header1 nav div a {
-    color: #ffe0ff !important; }
-        .header1 nav div a:hover {
-            color: #ffe0ff;
-            font-size: 25px;
-            background: linear-gradient(278deg, #020024 0%, #d522d1 57%, #00d4ff 100%);
-            border-radius: 5px;
-            padding: 0%; }
-    .header1 nav div ul .listanav {
-        width: 50%;
+        padding-bottom: 10px; }
+      main form.formulario fieldset div.datos div.formcont2 {
+        grid-area: formcont2;
         display: flex;
-        justify-content: space-between; }
-    .header1 nav div ul .listanav li a {
-        color: #ffe0ff; }
-    .header1 nav div form button:hover {
-        background: linear-gradient(278deg, #020024 0%, #d522d1 57%, #00d4ff 100%);
-        color: #ffe0ff !important; }
-    .header1 nav div form button .busc {
-        color: #ffe0ff;
-        border: solid 2px;
-        border-color: #ffe0ff;
-        border-radius: 10px; }
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px; }
+      main form.formulario fieldset div.datos div.info {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: grid;
+        place-items: center; }
+        main form.formulario fieldset div.datos div.info input {
+          border-radius: 10px; }
+        main form.formulario fieldset div.datos div.info select {
+          border-radius: 10px; }
+      main form.formulario fieldset div.datos div.comentario {
+        grid-area: comentario;
+        display: flex;
+        justify-content: center; }
+        main form.formulario fieldset div.datos div.comentario p textarea {
+          resize: none;
+          border-radius: 10px; }
+          main form.formulario fieldset div.datos div.comentario p textarea::placeholder {
+            font-size: medium; }
+    main form.formulario fieldset div.terminos {
+      display: grid;
+      justify-content: center;
+      margin: 10px; }
+      main form.formulario fieldset div.terminos div.enviar {
+        display: flex;
+        justify-content: space-around; }
+        main form.formulario fieldset div.terminos div.enviar input {
+          border-radius: 10px;
+          width: 100px; }
+
+@media screen and (max-width: 600px) {
+  div.header1 {
+    display: grid;
+    grid-template-areas: "logo" "titulo";
+    grid-template-rows: 125px 100px;
+    grid-template-columns: 1fr; }
+    div.header1 div.logo a {
+      display: flex;
+      justify-content: center;
+      grid-area: logo; }
+      div.header1 div.logo a img {
+        display: flex;
+        justify-content: center; }
+    div.header1 div.titulo {
+      grid-area: titulo; }
+      div.header1 div.titulo h1 {
+        font-size: 50px; }
+  nav div div ul.listanav {
+    width: 50%; }
+    nav div div ul.listanav a {
+      font-size: 15px; }
+  /* index */
+  div.sub1y3 h2 {
+    font-size: 20px !important; }
+  div.cont1 p {
+    font-size: 20px !important; }
+  div.cont2 div.hombre img {
+    width: 150px !important;
+    height: 250px !important; }
+  div.cont2 div.mujeryniños img {
+    width: 150px !important;
+    height: 250px !important; }
+  div.cont3 {
+    display: flex !important;
+    justify-content: center !important; }
+  div.mediosdepago div h2 {
+    font-size: 20px !important; }
+  div.mediosdepago div p {
+    font-size: 20px !important; }
+  /* secciones */
+  div.imgdest img {
+    width: 100px;
+    height: 200px; }
+  div.imgoferta img {
+    width: 100px;
+    height: 150px; }
+  /* ayuda */
+  main div.botones div button {
+    font-size: 15px; }
+  main div.subform h2 {
+    font-size: 20px;
+    padding-left: 20px; }
+  main form fieldset div.datos {
+    display: grid !important;
+    grid-template-areas: "formcont1" "formcont2" "comentario" !important; }
+    main form fieldset div.datos div.formcont1 {
+      grid-area: formcont1 !important;
+      display: flex !important; }
+    main form fieldset div.datos div.formcont2 {
+      grid-area: formcont2 !important;
+      display: flex !important;
+      justify-content: center !important; }
+    main form fieldset div.datos div.comentario {
+      grid-area: comentario !important;
+      display: flex !important;
+      justify-content: center !important; }
+      main form fieldset div.datos div.comentario p {
+        margin: 0; }
+        main form fieldset div.datos div.comentario p textarea {
+          width: 260px;
+          height: 200px; } }

@@ -1,0 +1,18 @@
+$estilos:(
+    fuente: 65px,
+    tono: #ffe0ff,
+    sombra: 30px 30px 30px rgb(32, 5, 28),
+    atras1: rgb(2,0,36),
+    atras2: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(213,34,209,1) 57%, rgba(0,212,255,1) 100%),
+    borde: 10px,
+);
+div.titulo{
+    h1{
+        font-size: map-get($estilos, fuente);
+        color: map-get($estilos, tono);
+        box-shadow: map-get($estilos, sombra);
+        background: map-get($estilos , atras1);
+        background: map-get($estilos , atras2);
+        border-radius: map-get($estilos , borde);
+    }
+}

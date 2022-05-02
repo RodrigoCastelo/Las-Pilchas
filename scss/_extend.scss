@@ -1,0 +1,8 @@
+div.wyf{
+    display: flex;
+    flex-direction: column;
+}
+div.gyig{
+    @extend .wyf;
+    padding-left: 50px;
+}
